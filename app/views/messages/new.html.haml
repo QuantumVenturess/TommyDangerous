@@ -1,0 +1,9 @@
+= form_for @message do |f|
+  %div
+    Name:
+    = f.text_field :name
+  %div
+    Content
+    = f.text_field :content
+  %div
+    = f.button 'Submit'
