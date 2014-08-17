@@ -1,15 +1,18 @@
 development:
-  adapter: mysql2
+  adapter:  postgresql
   database: tommydangerous_development
-  username: root
-  pool: 5
-  timeout: 5000
+  encoding: unicode
+  password: postgres
+  pool:     5
+  timeout:  5000
+  username: postgres
 production:
-  adapter: mysql2
-  database: tommydangerous
-  host: tommydangerous.clajyggponap.us-west-1.rds.amazonaws.com
-  password: quantumventures
-  pool: 5
-  port: 3306
-  timeout: 5000
-  username: admin
+  adapter:  postgresql
+  database: tommydangerous_production
+  encoding: unicode
+  host:     tommydangerouspostgresql.clajyggponap.us-west-1.rds.amazonaws.com
+  password: postgres
+  pool:     5
+  port:     5432
+  timeout:  5000
+  username: postgres
