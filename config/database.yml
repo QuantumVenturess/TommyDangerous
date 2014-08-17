@@ -11,4 +11,5 @@ production:
   password: quantumventures
   pool: 5
   port: 3306
-  timeout: 5000  
+  timeout: 5000
+  username: admin
